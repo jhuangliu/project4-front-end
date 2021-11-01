@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
+import React, { useState, useEffect} from 'react';
 import PostPoem from './PostPoem';
 const MyCollection = () => {
 	const [myPoems, setMyPoems] = useState();

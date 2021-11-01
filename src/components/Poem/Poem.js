@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import Poems from '../Poems/Poems';
+// import { Link } from 'react-router-dom';
+// import Poems from '../Poems/Poems';
 
 
 function Poem(props) {
 	const [poem, setPoem] = useState(null);
-	const [poem1, setPoem1] = useState(props);
+
     const v = useParams(); 
     const { id } = useParams(); 
 	 let url = `https://poetrydb.org/title/${id}/lines.json`;

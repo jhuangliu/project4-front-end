@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import App from '../../App'
-import Poem from '../Poem/Poem'
-import { Link, Route } from 'react-router-dom';
+
+import { Link } from 'react-router-dom';
 
 
 function Poems(props) {

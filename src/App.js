@@ -6,13 +6,13 @@ import MyCollection from './components/MyCollection/MyCollection'
 import React, { useState, useEffect } from 'react';
 // import Birds from './components/Birds/Birds';
 // import BirdDetails from './components/BirdDetails/BirdDetails';
-import { Route, Link, Redirect } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 
 function App() {
 
 let [poetListNav, setPoetListNav] = useState([]); 
-let [authorPoemList, setAuthorPoemList] = useState([]); 
+
 
 
 
