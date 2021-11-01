@@ -18,14 +18,10 @@ function Poem(props) {
 		fetch(url)
 			.then((res) => res.json())
 			.then((json) => {
-                console.log(poem1);
-				 console.log(props.name);
-                 console.log(id);
-                 console.log(v);
-				console.log(json);
+              
+		
 				setPoem(json);
-                console.log(poem);
-                console.log(url); 
+           
               
 			})
 
