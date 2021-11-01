@@ -42,7 +42,7 @@ if (!setPoetListNav) {
 
 	return (
 		<>
-			<header>
+			<header class = 'flex-header'>
 				<h1>
 					<a href='/'>Poetry Discovery</a>
 				</h1>
@@ -58,7 +58,7 @@ if (!setPoetListNav) {
 				</Link>
 			</div>
 
-			<section className='container1'>
+			<div className='flex-nav'>
 				{poetListNav.map((poet) => {
 					return (
 						<Link to={`/poems/${poet}`} key={poet}>
@@ -70,9 +70,9 @@ if (!setPoetListNav) {
 						</Link>
 					);
 				})}
-			</section>
+			</div>
 
-			<main>
+			<div>
 				{poetListNav.map((poet) => {
 					return <Route exact path={`/poems/${poet}`} component={Poems} />;
 				})}
@@ -83,7 +83,7 @@ if (!setPoetListNav) {
 	
 					
 		
-			</main>
+			</div>
 		</>
 	);
  }

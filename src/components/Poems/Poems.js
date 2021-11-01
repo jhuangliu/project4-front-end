@@ -36,21 +36,22 @@ function Poems(props) {
 //   });
 	return (
 		<>
-			<section className='container'>
-				{poems.map((poem) => {
-					return (
-						<Link to={`/details/${poem.title}`} key={poem.title}>
-							<div className='card'>
-								<div className='card-title'>
-									<h3>{poem.title}</h3>
+			<div className = 'main-flex'>
+				<section className='container'>
+					{poems.map((poem) => {
+						return (
+							<Link to={`/details/${poem.title}`} key={poem.title}>
+								<div className='card'>
+									<div className='card-title'>
+										<h3 >{poem.title}</h3>
+									</div>
 								</div>
-							</div>
-						</Link>
-					);
-				})}
-			</section>
-			<h1 className='poetName'>{author}</h1>
-		
+							</Link>
+						);
+					})}
+				</section>
+			</div>
+			<h1 id = "headings" className='main-flex'>{author}</h1>
 		</>
 	);
 }

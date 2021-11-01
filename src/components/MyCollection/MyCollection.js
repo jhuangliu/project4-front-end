@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, Component } from 'react';
+import PostPoem from './PostPoem';
 const MyCollection = () => {
 	const [myPoems, setMyPoems] = useState();
 
-    let url = 'http://localhost:8000/poems/'
+     let url = 'http://localhost:8000/poems/'
+    // let url = 'poet-discovery-backend.herokuapp.com/poems/';
 
     useEffect(() => {
 			fetch(url)
@@ -22,10 +23,14 @@ const MyCollection = () => {
 	}
 
 
+  
+
+
+
 	 return (
 			<div>
-				<h1 class = 'main'>Favorited Poems</h1>
-				<section className='container'>
+				<h1 id = 'headings'>Favorited Poems</h1>
+				<section id = 'heading' className='container'>
 					{myPoems.map((poe) => {
 						return (
 							<div className='cards'>
@@ -38,10 +43,8 @@ const MyCollection = () => {
 						);
 					})}
 				</section>
-                <form action="">
-
-
-                </form>
+				
+                <PostPoem/>
 			</div>
 		);
 };
