@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Poems(props) {
 	const [poems, setPoems] = useState([]);
 	const author = props.location.pathname.slice(7);
-	const {title} = useParams(); 
+	
 	let url = `https://poetrydb.org/author/${author}/title`;
 	// let url2 = `https://poetrydb.org/title/Ozymandias/lines.json`;
 
@@ -22,7 +22,7 @@ function Poems(props) {
 			})
 
 			.catch(console.error);
-	}, []);
+	});
 
 	if (!poems) {
 		return <h1>Loading</h1>;

@@ -15,7 +15,7 @@ const MyCollection = () => {
 				})
 
 				.catch(console.error);
-		}, []);
+		});
 	
 
 	if (!myPoems) {

@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 function Poem(props) {
 	const [poem, setPoem] = useState(null);
 
-    const v = useParams(); 
+
     const { id } = useParams(); 
 	 let url = `https://poetrydb.org/title/${id}/lines.json`;
    // let url2 = https://poetrydb.org/author,title/Shakespeare;Sonnet
@@ -26,7 +26,7 @@ function Poem(props) {
 			})
 
 			.catch(console.error);
-	}, []);
+	});
 
 	if (!poem) {
 		return <h1>Loading</h1>;
