@@ -31,7 +31,7 @@ useEffect(() => {
 		})
 
 		.catch(console.error);
-}, []);
+});
 
 if (!setPoetListNav) {
 	return <h1>Loading</h1>;
