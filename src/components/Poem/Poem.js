@@ -36,10 +36,10 @@ function Poem(props) {
 
 	return (
 		<>
-			<section className='container'>
+			<section className='headings'>
 				{poem.map((poe) => {
 					return (
-						<div d='headings' className='cards'>
+						<div className='cards'>
 							<div id='headings' className='cards-title'>
 								<h3 id='headings'>{poe.lines}</h3>
 							</div>

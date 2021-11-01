@@ -35,14 +35,14 @@ function Poems(props) {
 //   });
 	return (
 		<>
-			<div className = 'main-flex'>
-				<section className='container'>
+			<div className='main-flex'>
+				<section  className='container'>
 					{poems.map((poem) => {
 						return (
 							<Link to={`/details/${poem.title}`} key={poem.title}>
-								<div className='card'>
+								<div  className='card'>
 									<div className='card-title'>
-										<h3 >{poem.title}</h3>
+										<h3>{poem.title}</h3>
 									</div>
 								</div>
 							</Link>
@@ -50,7 +50,9 @@ function Poems(props) {
 					})}
 				</section>
 			</div>
-			<h1 id = "headings" className='main-flex'>{author}</h1>
+			<h1 id='headings' className='main-flex'>
+				{author}
+			</h1>
 		</>
 	);
 }

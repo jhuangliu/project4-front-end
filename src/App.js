@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 // import Birds from './components/Birds/Birds';
 // import BirdDetails from './components/BirdDetails/BirdDetails';
 import { Route, Link } from 'react-router-dom';
-
+import './s.scss'
 
 function App() {
 
